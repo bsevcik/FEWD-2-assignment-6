@@ -25,7 +25,7 @@ function part2_3() {
 function part2_4() {
     "use strict";
     var biggest, smallest, numArray;
-    var num = window.prompt("Enter five numbers comma delimited. \rEx: 1,2,3,4,5");
+    var num = window.prompt("Enter five numbers comma delimited. \rEx: 1,2,3,4,5\r");
     numArray = num.split(",");
     for (var i = 0, smallest = numArray[0], biggest = numArray[0]; i < numArray.length; i++) {
         if (numArray[i] < smallest) {

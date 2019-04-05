@@ -35,7 +35,7 @@ function part4_4(arg) {
     "use strict";
     var randomString = "";
     for (var i = 0; i < arg; i++) {
-        randomString = randomString + String.fromCharCode(Math.round(Math.random() * 128));
+        randomString = randomString + String.fromCharCode(Math.round(Math.random() * 93) + 33);
     }
     return randomString;
 }

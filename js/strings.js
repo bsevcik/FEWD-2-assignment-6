@@ -10,7 +10,7 @@ function part1_1() {
 function part1_2() {
     "use strict";
     var name = window.prompt("What's your name?");
-    var number = parseInt(window.prompt("Pick a number"), 10);
+    var number = parseInt(window.prompt("Pick a number not longer than the length of your name"), 10);
     var nameNum = name.slice((number - 1), number);
     window.alert("The letter " + number + " places from the beginning of your name is " + nameNum);
 }
@@ -26,7 +26,7 @@ function part1_3() {
 function part1_4() {
     var text = "The quick brown fox jumps over the lazy dog";
     var foxIndex = text.indexOf("fox");
-    alert("The first index at which 'fox' begins is " + foxIndex);
+    alert("In the string: " + text + " \rThe first index at which 'fox' begins is " + foxIndex);
 }
 //STEP 5
 function part1_5() {
@@ -44,8 +44,8 @@ function part1_6() {
 //STEP 7
 function part1_7() {
     var text = "The quick brown fox jumps over the lazy dog";
-    var word = window.prompt("Enter a word to search for");
-    alert(text.search(word));
+    var word = window.prompt("I have a string with the value: " + text + "\rEnter a word to search in my string");
+    alert("The index where your search is first found at is: " + text.search(word));
 }
 //STEP 8
 function part1_8() {
